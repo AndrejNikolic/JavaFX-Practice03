@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="484.0" prefWidth="381.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLDocumentController">
+   <children>
+      <TextField fx:id="field_ime" layoutX="31.0" layoutY="29.0" prefHeight="25.0" prefWidth="102.0" promptText="Ime" />
+      <TextField fx:id="field_prezime" layoutX="140.0" layoutY="29.0" prefHeight="25.0" prefWidth="102.0" promptText="Prezime" />
+      <TextField fx:id="field_starost" layoutX="251.0" layoutY="29.0" prefHeight="25.0" prefWidth="102.0" promptText="Starost" />
+      <ChoiceBox fx:id="programer_choice" layoutX="31.0" layoutY="88.0" prefHeight="25.0" prefWidth="116.0" />
+      <Button fx:id="dodajProgrameraBtn" layoutX="31.0" layoutY="119.0" mnemonicParsing="false" onAction="#dodajProgramera" prefHeight="25.0" prefWidth="116.0" text="Dodaj programera" />
+      <TextField fx:id="menadzer_fax" layoutX="237.0" layoutY="88.0" prefHeight="25.0" prefWidth="116.0" promptText="Fakultet" />
+      <Button fx:id="dodajMenadzeraBtn" layoutX="237.0" layoutY="119.0" mnemonicParsing="false" onAction="#dodajMenadzera" prefHeight="25.0" prefWidth="116.0" text="Dodaj menadžera" />
+      <Button fx:id="print" layoutX="160.0" layoutY="197.0" mnemonicParsing="false" onAction="#printIzvestaj" prefHeight="25.0" prefWidth="132.0" text="Štampaj izveštaj" />
+      <ChoiceBox fx:id="izvestaj_choice" layoutX="17.0" layoutY="197.0" prefHeight="25.0" prefWidth="132.0" />
+      <Label fx:id="izvestaj" layoutX="17.0" layoutY="226.0" text="Izveštaj" />
+      <ListView fx:id="listaView" layoutX="17.0" layoutY="250.0" prefHeight="218.0" prefWidth="348.0" />
+   </children>
+</AnchorPane>
